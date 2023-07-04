@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      section {
+        display: flex;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+      }
+      article {
+        float: right;
+        width: 70%;
+        background-color: #f1f1f1;
+      }
+      nav {
+        float: left;
+        width: 30%;
+        background-color: #ccc;
+
+        /* padding-left: 0; */
+      }
+      nav ul {
+        list-style-type: none;
+        overflow: hidden;
+        padding-left: 0;
+      }
+      li {
+        /* float: left; */
+        padding-bottom: 2px;
+      }
+      li a {
+        text-decoration: none;
+        display: block;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 1.2rem;
+      }
+
+      li a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+
+      h1,
+      p {
+        max-width: 80%;
+        margin: 10px auto;
+      }
+      p::first-letter {
+        font-size: large;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+        section {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <h1>cities</h1>
+    </header>
+    <section>
+      <nav class="link">
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">France</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>London</h1>
+        <p>
+          London is the capital city of England. It is the most populous city in
+          the United Kingdom, with a metropolitan area of over 13 million
+          inhabitants.
+        </p>
+        <p>
+          Standing on the River Thames, London has been a major settlement for
+          two millennia, its history going back to its founding by the Romans,
+          who named it Londinium.
+        </p>
+      </article>
+    </section>
+    <footer>cities</footer>
+  </body>
+</html>

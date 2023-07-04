@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.875em;
+        text-align: center;
+      }
+
+      p {
+        font-size: 0.875em;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 90%;
+        background-color: rgb(193, 247, 247);
+        border: none;
+        border-left: 4px solid rgb(255, 81, 0);
+        outline: none;
+        padding: 12px;
+        border-radius: 10px;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        border-left: 3px solid rgb(124, 43, 231);
+      }
+      select,
+      option {
+        width: 90%;
+        padding: 2px;
+      }
+      textarea {
+        padding-left: 12px;
+        border-radius: 10px;
+        width: 90%;
+      }
+      input[type="submit"] {
+        padding: 10px 15px;
+        font-weight: 800;
+        color: white;
+        font-size: medium;
+        border-radius: 10px;
+        background-color: blue;
+        outline: none;
+        border: none;
+      }
+      input[type="submit"]:hover {
+        background-color: #e5490b;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>html form</h2>
+    <form action="" method="post" autocomplete="on">
+      <fieldset style="border-radius: 12px; width: 60%; margin: 12px auto">
+        <legend>Personal Information</legend>
+        last Name: <br />
+        <input type="text" /><br />
+        first Name: <br />
+        <input type="text" /><br />
+        email: <br />
+        <input type="email" name="" id="" /><br />
+        gender: Male<input name="gender" type="radio" value="male" />
+        female<input name="gender" type="radio" value="female" />
+        <br />
+        Desired car:
+        <select name="cars" size="1" multiple>
+          <option value="saab">Saab</option>
+          <option selected value="volvo">Volvo</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br />
+        Your comment: <br /><textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+        ></textarea
+        ><br />
+        <input type="submit" />
+      </fieldset>
+      <input list="browser" />
+      <datalist id="browser">
+        <option value="mozilla">Mozilla</option>
+        <option value="internet">Internet Explorer</option>
+        <option value="chrome">Chrome</option>
+        <option value="opera">Opera</option>
+        <option value="safari">Safari</option>
+      </datalist>
+    </form>
+    <form
+      action=""
+      method="post"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      0 <input type="range" id="a" name="a" value="50" /> 100 +
+      <input type="number" id="b" name="b" value="50" /><br />
+      <output name="x" for="a b"></output>
+    </form>
+  </body>
+</html>

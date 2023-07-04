@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Webpage</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .heading {
+        width: 100%;
+        background-color: #e3e3e3;
+        padding: 2rem;
+        text-align: center;
+      }
+      .heading h1 {
+        margin: 12px;
+        padding: 0;
+      }
+      .main h1 {
+        margin: 1.1rem;
+      }
+      .menu {
+        float: left;
+        width: 20%;
+        /* background-color: #e3e3e3; */
+        color: black;
+        margin-top: 1px;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        height: 100%;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: fixed;
+        overflow: auto;
+      }
+      li {
+        margin: 0;
+      }
+      li a {
+        display: block;
+        background-color: #e3e3e3;
+        color: black;
+        width: 100%;
+        margin-top: 2px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+      }
+      li a:hover {
+        background-color: #fff;
+      }
+      .main {
+        float: left;
+        width: 60%;
+        background-color: #fff;
+        color: black;
+        margin-top: 2px;
+      }
+      .right-menu {
+        float: left;
+        width: 20%;
+        background-color: #e3e3e3;
+        color: black;
+        margin-top: 2px;
+        text-align: center;
+      }
+      .main h1 {
+        text-align: center;
+      }
+      .content {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-left: 15%;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        /* overflow: hidden; */
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        background-color: #e3e3e3;
+        margin-top: 2px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .main,
+        .menu,
+        .right-menu {
+          width: 100%;
+        }
+        .main {
+          margin-bottom: 1rem;
+        }
+        .footer {
+          margin-top: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 class="responsive-text">Hello HTML</h1>
+    </div>
+    <div class="clearfix">
+      <div class="menu">
+        <ul>
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">Forum</a></li>
+          <li class="link"><a href="#">News</a></li>
+          <li class="link"><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <h1>This is the main content</h1>
+        <p class="content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias iusto
+          perferendis eveniet. Ipsum, ducimus voluptates distinctio cum, porro
+          omnis id, obcaecati animi fugiat possimus aperiam modi eveniet vel
+          deserunt quibusdam iste nesciunt a quae cumque deleniti officia
+          perspiciatis atque
+        </p>
+      </div>
+      <div class="right-menu">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae,
+          nemo?
+        </p>
+      </div>
+    </div>
+    <footer class="footer">&copy; Welcome to my website</footer>
+  </body>
+</html>

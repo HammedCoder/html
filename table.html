@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table in HTML</title>
+    <style>
+      .text {
+        text-align: center;
+        color: blue;
+        background-color: #ffee33;
+        text-transform: uppercase;
+      }
+      table {
+        border-spacing: 40px;
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text">names of students offering Mathematics in QSI</h1>
+    <table class="table">
+      <caption>
+        Student Names
+      </caption>
+      <thead>
+        <tr>
+          <th>Last name</th>
+          <th>First Name</th>
+          <th>Middle Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Agbita</td>
+          <td>Praise</td>
+          <td>Iruoghene</td>
+          <td>14</td>
+          <td>f</td>
+        </tr>
+        <tr>
+          <td>Agbita</td>
+          <td>Praise</td>
+          <td>Iruoghene</td>
+          <td>14</td>
+          <td>f</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

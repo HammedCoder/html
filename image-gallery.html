@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .gallery {
+        border: 1px solid #999;
+      }
+      .gallery:hover {
+        border: 1px solid #333;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+      }
+      .desc {
+        padding: 0 10px;
+        text-align: justify;
+        padding-bottom: 6px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      .responsive {
+        width: 24.999999%;
+        padding: 0 6px;
+        float: left;
+      }
+
+      @media screen and (max-width: 900px) {
+        .responsive {
+          width: 49.99999%;
+        }
+      }
+      @media screen and (max-width: 545px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      .clear-fix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#gallery"
+          ><img src="./images/avatar.jpg" alt="" height="400" width="600"
+        /></a>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          aspernatur repudiandae nam sed reprehenderit, hic nostrum ducimus.
+          Natus placeat, aut voluptate laborum, eveniet illum sapiente dicta
+          magnam fugit provident id voluptatibus libero culpa? Atque obcaecati
+          quae illum cumque error, eum eius numquam ipsam ratione incidunt,
+          temporibus voluptatem nihil hic alias?
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#gallery"
+          ><img src="./images/avatar-2.jpg" alt="" height="400" width="600"
+        /></a>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          aspernatur repudiandae nam sed reprehenderit, hic nostrum ducimus.
+          Natus placeat, aut voluptate laborum, eveniet illum sapiente dicta
+          magnam fugit provident id voluptatibus libero culpa? Atque obcaecati
+          quae illum cumque error, eum eius numquam ipsam ratione incidunt,
+          temporibus voluptatem nihil hic alias?
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#gallery"
+          ><img src="./images/avatar-3.jpg" alt="" height="400" width="600"
+        /></a>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          aspernatur repudiandae nam sed reprehenderit, hic nostrum ducimus.
+          Natus placeat, aut voluptate laborum, eveniet illum sapiente dicta
+          magnam fugit provident id voluptatibus libero culpa? Atque obcaecati
+          quae illum cumque error, eum eius numquam ipsam ratione incidunt,
+          temporibus voluptatem nihil hic alias?
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a href="#gallery"
+          ><img src="./images/avatar-4.jpg" alt="" height="400" width="600"
+        /></a>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          aspernatur repudiandae nam sed reprehenderit, hic nostrum ducimus.
+          Natus placeat, aut voluptate laborum, eveniet illum sapiente dicta
+          magnam fugit provident id voluptatibus libero culpa? Atque obcaecati
+          quae illum cumque error, eum eius numquam ipsam ratione incidunt,
+          temporibus voluptatem nihil hic alias?
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </body>
+</html>

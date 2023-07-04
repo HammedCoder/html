@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Counter</title>
+    <style>
+      body {
+        counter-reset: section;
+      }
+      h1 {
+        counter-reset: subsection;
+        color: red;
+      }
+      h1::before {
+        counter-increment: section;
+        content: "Section " counter(section) ". ";
+      }
+      h2::before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Website Development Prerequisite Tutorial</h1>
+    <h2 class="count"><a href="#id1">HTML Tutorial</a></h2>
+    <h2 class="count"><a href="#id2">CSS Tutorial</a></h2>
+    <h2 class="count"><a href="#id3">Javascript Tutorial</a></h2>
+    <h2 class="count"><a href="#id4">Bootstrap Tutorial</a></h2>
+    <h1>Mobile Development</h1>
+    <h2><a href="#id5">Dart Programming Language</a></h2>
+    <h2><a href="#id6">Flutter</a></h2>
+  </body>
+</html>
